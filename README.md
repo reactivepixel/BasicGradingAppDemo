@@ -3,7 +3,7 @@
 Clone the Repo!
 
 ```
-git clone git@github.com:apextion/lvl-Logic.git
+git clone git@github.com:reactivepixel/BasicGradingAppDemo.git
 ```
 
 Install dependencies
@@ -11,6 +11,12 @@ Install dependencies
 ```
 npm i;
 npm i -g foreman;
+
+```
+
+Setup Database
+```
+npm run initDB
 
 ```
 

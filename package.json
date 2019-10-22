@@ -10,6 +10,8 @@
     "remigrate": "cd api; npx sequelize db:migrate:undo:all; npx sequelize db:migrate;",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "cd api; npm i; cd ../react_js;npm i;",
+    "createDB": "cd api; npx sequelize db:drop; npx sequelize db:create",
+    "initDB": "npm run createDB; npm run remigrate; npm run reseed",
     "start": "nf start"
   },
   "repository": {

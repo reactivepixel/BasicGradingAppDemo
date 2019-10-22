@@ -1,6 +1,0 @@
-{
-  "name": "FormStore",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./FormStore.js"
-}

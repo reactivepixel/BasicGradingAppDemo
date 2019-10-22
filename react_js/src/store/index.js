@@ -8,9 +8,7 @@ import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 
 // pull our containered reducers
-import products from './products/reducer';
-import stores from './stores/reducer';
-// import projects from './projects/reducer';
+import students from './students/reducer';
 
 const middleware = applyMiddleware(
   thunkMiddleware,
@@ -19,9 +17,7 @@ const middleware = applyMiddleware(
 
 // REDUX =====
 const allReducers = combineReducers({
-  stores,
-  products,
-  // projects,
+  students,
 });
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

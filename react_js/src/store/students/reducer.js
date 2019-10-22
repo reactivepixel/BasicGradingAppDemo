@@ -11,7 +11,7 @@ const initState = {
   byID: {},
 };
 
-export default function storesReducer(state = initState, actions) {
+export default function studentsReducer(state = initState, actions) {
   const { type, payload } = actions;
   switch (type) {
     case CREATE_PRODUCT:
@@ -34,7 +34,7 @@ export default function storesReducer(state = initState, actions) {
       return {
         byID: {
           ...state.byID,
-          ...arrayToObject(payload.stores),
+          ...arrayToObject(payload.students),
         },
       };
     case DELETE_PRODUCT:

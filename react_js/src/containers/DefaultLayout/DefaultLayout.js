@@ -29,11 +29,11 @@ class DefaultLayout extends Component {
   render() {
     return (
       <div className="app">
-        <AppHeader fixed>
+        {/* <AppHeader fixed>
           <Suspense fallback={this.loading()}>
             <DefaultHeader />
           </Suspense>
-        </AppHeader>
+        </AppHeader> */}
         <div className="app-body">
           <AppSidebar fixed display="lg">
             <AppSidebarHeader />
